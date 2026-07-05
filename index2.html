@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Era Digital</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(-45deg,#ff6ec7,#b983ff,#8be9fd,#ffd6f7);
+background-size:400% 400%;
+animation:fondo 12s ease infinite;
+color:white;
+overflow-x:hidden;
+}
+
+@keyframes fondo{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+}
+
+.hero{
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(15px);
+padding:50px;
+border-radius:30px;
+max-width:900px;
+box-shadow:0 0 35px rgba(255,255,255,.25);
+}
+
+.hero h1{
+font-size:65px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+button{
+padding:16px 35px;
+border:none;
+border-radius:40px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+background:white;
+color:#b14cff;
+transition:.4s;
+}
+
+button:hover{
+transform:scale(1.08);
+box-shadow:0 0 25px white;
+}
+
+section{
+padding:80px 10%;
+}
+
+.titulo{
+text-align:center;
+font-size:45px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(12px);
+border-radius:25px;
+overflow:hidden;
+transition:.4s;
+box-shadow:0 0 20px rgba(255,255,255,.2);
+}
+
+.card:hover{
+transform:translateY(-12px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h2{
+padding:20px;
+font-size:28px;
+}
+
+.card p{
+padding:0 20px 25px;
+line-height:1.7;
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.galeria img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:20px;
+transition:.5s;
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+}
+
+footer{
+text-align:center;
+padding:30px;
+font-size:18px;
+}
+
+.burbuja{
+position:fixed;
+background:rgba(255,255,255,.25);
+border-radius:50%;
+animation:flotar linear infinite;
+}
+
+@keyframes flotar{
+from{
+transform:translateY(100vh);
+}
+to{
+transform:translateY(-120vh);
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="burbuja" style="left:10%;width:40px;height:40px;animation-duration:12s;"></div>
+<div class="burbuja" style="left:40%;width:60px;height:60px;animation-duration:15s;"></div>
+<div class="burbuja" style="left:75%;width:30px;height:30px;animation-duration:10s;"></div>
+
+<header>
+
+<div class="hero">
+
+<h1>🌐 La Era Digital</h1>
+
+<p>
+La revolución tecnológica ha cambiado la forma en que aprendemos,
+trabajamos, nos comunicamos y vivimos cada día.
+</p>
+
+<button onclick="document.getElementById('contenido').scrollIntoView()">
+Explorar
+</button>
+
+</div>
+
+</header>
+
+<section id="contenido">
+
+<h1 class="titulo">✨ ¿Qué es la Era Digital?</h1>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800" alt="Tecnología">
+
+<h2>💻 Tecnología</h2>
+
+<p>
+La Era Digital es el periodo en el que la tecnología y el internet forman parte de nuestra vida diaria, facilitando el acceso a la información y la comunicación.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800" alt="Internet">
+
+<h2>🌎 Conectividad</h2>
+
+<p>
+Millones de personas pueden comunicarse al instante desde cualquier parte del mundo gracias a las redes digitales.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800" alt="IA">
+
+<h2>🤖 Inteligencia Artificial</h2>
+
+<p>
+La inteligencia artificial ayuda en la educación, la medicina, la industria y muchas otras áreas para resolver problemas de forma más eficiente.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="titulo">📸 Galería Digital</h1>
+
+<div class="galeria">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800">
+
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800">
+
+<img src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?w=800">
+
+<img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800">
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="titulo">🚀 Ventajas</h1>
+
+<div class="grid">
+
+<div class="card">
+<h2>📚 Educación</h2>
+<p>Acceso a cursos, bibliotecas digitales y aprendizaje desde cualquier lugar.</p>
+</div>
+
+<div class="card">
+<h2>💼 Trabajo</h2>
+<p>Permite el teletrabajo, reuniones virtuales y colaboración en tiempo real.</p>
+</div>
+
+<div class="card">
+<h2>💡 Innovación</h2>
+<p>Impulsa nuevos inventos, aplicaciones, robots e inteligencia artificial.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+💜 Proyecto Web | La Era Digital © 2026
+
+</footer>
+
+</body>
+</html>
